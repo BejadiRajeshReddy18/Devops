@@ -1,0 +1,83 @@
+
+
+
+
+  umask = user mask 
+  
+  permissions r based on  umask 
+  
+  default value for root = 0022
+  
+  default value for normal user = 0002 
+  
+  base permissions for directory is 0777
+  
+  read standard value - 4
+  write standard value is - 2
+  x execute standard value is - 1 
+  
+  4+2+1 = 7 
+  
+  0022  0002
+    ww     w
+	
+	
+	0777
+	 
+	 4+2+1 = 7 r+w+x 
+	 4+2+1 = 7 
+	 4+2+1 = 7
+	 
+	 
+	    0777
+	    0002
+	    0775 = 
+		
+		4+2+1 = rwx
+		4+2+1 = rwx
+		4+1  = rx 
+		
+		
+		root user 0022
+		
+		0777
+		0022 
+		0755 = 
+		
+		base permissions for file 0666
+		
+		
+		root user
+
+                 0666 
+		     0022 
+		   = 0644 rw r r 
+			 
+		normal user 
+		
+		0666
+		0002
+		0664 = 
+		
+		mv command it will move or rename 
+		
+		
+		bash  bourne again shell 
+		sh    secure shell 
+		zsh   z shell 
+		ksh   korn shell 
+		
+		
+		linux package managers 
+		
+		yum 
+		
+		
+		BIN 
+		BASH 
+		
+		#! shebang line 
+		
+		bin
+		
+		/bash 

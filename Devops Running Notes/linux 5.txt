@@ -1,0 +1,86 @@
+ 		   
+		   cd /tmp = absolute path 
+		   
+		   starts from root directory  / 
+		   cd  tmp    
+		   
+		   
+		   cd /tpm 
+		   
+		   cd /rajesh 
+		   
+		   cd /tmp = 
+		   
+		   cd tmp   = relative path starts from current dir 
+		   
+		   
+		   find command 
+		   
+		   how to search all the empty
+		   files in the current directory ?  find .
+		   
+		   
+		   
+		   current directory  => .
+		   
+		   dot represnts current dir 
+		   
+		   command syntax  => find username 
+		   
+		   
+		   
+		   
+		   chmod = 
+		   
+		   chmod 777
+		   chmod 222
+		   chmod 344
+		   
+		   
+		   owner groups and others 
+		   
+		   
+		   dir owner 
+		   
+		   groups 
+		   
+		   7 4 4
+		  
+		  
+		  chgrp change group 
+		  
+		  default group location 
+		  
+		  
+		  
+		  cp = copy 
+		  
+		  cp -R 
+		  
+		  
+		  
+		  cp -R filename /destination location name 
+		  
+		        brucelee /rajesh brucelee 
+				
+				mv = move or rename 
+				
+				mv filename  new filename 
+				
+				mv move or rename 
+				
+				mv filename newfilename 
+				
+				
+				
+	Assignment
+	
+				create a dir change the permissions 
+				
+				chmod 
+				
+				by using command do some changes 
+				
+				create 5 directories 
+				
+				

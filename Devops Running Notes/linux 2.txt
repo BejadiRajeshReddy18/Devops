@@ -1,0 +1,87 @@
+   
+   
+    linux :- 
+	
+	linux started around 1991 by linus torlvads.
+	
+    linux is a multi user 
+	and multi tasking operating system 
+	
+	linux is a open source....
+	
+	we have  aix ,sun solaries ,hp-ux 
+	
+	
+	linux distributions 
+	
+	1.red hat 
+	2.ubuntu 
+	3.suse linux 
+	4.fedora
+	5.gentoo
+	6.centos 
+	7.mandriva
+	8.debian
+	9.slackware 
+	10 amazon linux 
+	
+	
+	
+	navigation and dirctory control commands 
+	
+	
+	what is the meaning of dir ? 
+	
+	file 
+	
+	mkdir = make dirctory 
+	
+	ls = list the dirctory contents 
+	
+	pwd = present working dirctory 
+	
+	
+	env or printenv 
+	
+	rmdir 
+	
+	to perform any arithmatic ops command ?
+	expr 
+	
+	rmdir = to remove a dir 
+	
+   rm = it will remove a file or directory 
+   
+   file maintance commands :-
+   
+   touch = it will create the file with zero bytes 
+   
+  
+   cp = it will cpoy file contents 
+   of one file to another file 
+   
+   mv = it will move or rename the file 
+   
+   wc= counts the number of lines ,words ,bytes,
+   
+   ln = it will create the link btw files...
+   
+   
+   text editor commands :- 
+   
+   vi or vim text editor 
+   
+   nano another text editor 
+   
+   
+   
+   vi  editor oprn 
+   
+   command mode 
+   then 
+   insert mode 
+   write the file 
+   
+ save it and quit 
+ 
+ wq

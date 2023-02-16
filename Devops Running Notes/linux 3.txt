@@ -1,0 +1,85 @@
+ 
+ 
+     root directory = contains all that normal users info 
+	 
+	 root users info 
+	 
+	 
+	 rm -f 
+	 
+	 to remove the file -f 
+	 
+	 touch = 
+	 
+	 t2 micro 
+	 
+	 
+	 chmod = we can change the permissions for the files and dirctries
+	 any file 
+	 any dir 
+	 
+	 read write execute 
+	 
+	 r     w       x 
+	 
+	 
+	 chown =
+	 
+	 
+	 user 
+	 
+	 
+	 read write execute 
+	  r     w     x 
+	  
+	  
+	  chmod = change mode 
+	  
+	  chmod 000 
+	  
+	  creat a file in the name of python 
+	  
+	  chnage the permission 
+	  step one 
+	  
+	 add execute 
+	 
+	 add executions 
+	 
+	 
+	 
+	 echo means to print the content 
+	 
+	 date means its a 
+	 
+	 
+	 command    echo $SHELL 
+
+
+
+           	 
+	 $SHELL                  =      /bin/bash
+
+     predefined variable             value 
+	 
+	 
+	 $PWD
+	 
+	 
+	 
+	 
+	 
+ 
+ 
+ all the pre defined variables in uppercase 
+ 
+ PWD SHELL HOME HISTSIZE 
+ 
+ 
+ 
+ $variablename 
+ $HISTSIZE 
+ $USER
+ $PWD
+ $BASH 
+ 
