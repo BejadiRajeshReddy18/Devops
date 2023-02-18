@@ -1,0 +1,65 @@
+ 
+ 
+ 
+ 
+     sort : 
+	 
+	 ascending order 
+	 
+	 
+	 pipe | 
+	 
+	 cat friend 
+	 
+	  cat friend | sort
+
+
+
+
+cat filename 
+
+
+my requirement is i want to see the content in uppercase 
+
+   tr = translate 
+   
+   
+   
+   grep command 
+   
+   grep  name filename 
+   
+   grep -i 
+   
+   -i = ignoring the case 
+   
+   
+   sed command :-  stream editor 
+   
+   sed "s/blue/red/" filename 
+   
+   s = string 
+   
+   sed " s/blue/red/g" filename 
+   
+   g= globally 
+   
+   
+   sed command is going to work on output 
+   only 
+ 
+ 
+ stream = output 
+ 
+ stream means output 
+  sed -i  "s/blue/red/g" colours
+
+
+
+---------------system resources related commands--------
+
+1. who command :-
+
+
+
+

@@ -1,0 +1,116 @@
+
+
+
+
+
+mkdir  awsdevops 
+
+mkdir azuredevops 
+
+mkdir gcpdevops 
+
+
+2.  wc command 
+
+wc filename 
+lines  words charcaters 
+wc -l 
+       wc -w 
+               wc -c 
+			   
+3.editors :- 
+
+vi editor 
+vim editor 
+nano editor 
+
+vim is the advanced version of vi 
+updated version of vi 
+
+1. vi editor :-
+
+
+vi filename 
+
+vi rajesh.sh 
+
+open the filename
+open the rajesh.sh 
+
+step 1
+vi filename 
+
+command mode 
+
+press i = insert mode 
+
+type the content ,write the content 
+
+then press esc 
+then 
+:wq  = save and quit 
+
+now i dont want to save 
+
+command = :q!  quit 
+
+
+ 
+nano editor :- 
+
+there is no concept of command mode ,insert mode 
+
+bydefault it is in insert mode 
+
+command to save = ctrl o
+
+command to close = ctrl x 
+
+
+
+          ------text reading & displaying commands------
+		  
+		  
+		  1 .echo 
+		  
+		  to display the message on console 
+		  
+		 
+ echo hello guys
+
+ echo "hello             guys"
+ 
+          2. head command :-  head filename 
+		  
+		  it will display first 10 lines 
+		  
+		  now i want to see first 15 lines 
+		  
+		  head -15 filename 
+		  
+		  3. tail command : tail filename 
+		  
+		  it will display the last 10 lines 
+		  
+		  sed = stream editor 
+		  i want to display the specific  (52)line number 
+		  sed -n "52p" filename 
+		  
+		  p = print 
+		  
+		  now i want to display from 31st line to 34th line 
+		  
+		  sed -n "31,34p" filename 
+		  
+		  
+		 
+
+
+
+
+
+
+
+
+
+
