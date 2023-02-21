@@ -1,0 +1,64 @@
+    useradd :- 
+	
+	passwd :- password 
+	
+	
+	
+ps :- 
+
+ps means process 
+
+to know the process id of the command...
+
+ps will give the current user procees ids ...
+
+ps 
+
+ps -ef 
+
+ppid= parent process id 
+
+
+ps -ef | grep git 
+
+e means all
+f means formatedway 
+
+
+
+kill : it can be used to kill the process 
+
+kill signals 
+
+1-64 signals 
+
+sig means signal 
+
+1-64 signal types are there ....
+
+kill -l 
+
+kill -9 pid 
+
+kill 
+
+
+top :- 
+
+we can call this command as 
+a 'resource utility tool'
+
+
+
+
+Rhel: redhat enterprised linux 
+
+rhel package managers 
+
+yum is a package manager 
+
+ubuntu :- 
+
+apt 
+apt -get package managers 
+

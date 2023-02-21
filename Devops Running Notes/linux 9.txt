@@ -1,0 +1,94 @@
+       
+	   
+	   
+	   
+	   date command :- 
+	   
+	   we can display the date 
+	   
+	   now i want to set the date 
+	   
+	   
+	   year month date 
+	   2022  02    25 
+	   
+	   date -s " yyyy/mm/dd"
+	   
+	   df: df means disk free 
+	   
+	   free -h 
+	   
+	   
+	   i want to know that how much dir's occupied 
+	   
+	   du :-
+	   
+	   disk usage of that directory 
+	   
+	   du -h 
+	   
+	   
+	   
+	   hostname :- 
+	   
+	   hostname name 
+	   
+	   
+	   
+	   
+	   now i want  to see the port number 
+	   
+	   
+	   ifconfig :- 
+	   
+	   package name 
+	   
+	   net-tools 
+	   
+	   ipconfig 
+	   
+	   ip a
+	   
+	   
+	   man command :- 
+	   
+	   we xan see the detailed about the command 
+	   
+	   man command name 
+	   
+	   whatis :- 
+	   
+	   what is mkdir 
+	   
+	   
+	   info:- 
+	   
+	   info mkdir
+	   
+	   
+	  --help :- 
+	   
+	   
+	   man recomended 
+	   
+	   --help 
+	   
+	  whatis 
+	  
+	  info 
+	  
+	  
+	  service commanmd :- 
+	  
+	  systemctl list-unit-files
+	  
+	  
+	  ex :- service jenkins start 
+	        service jenkins stop
+			service jenkins status 
+			
+			
+			
+			last :- 
+			
+			
