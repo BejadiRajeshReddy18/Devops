@@ -1,0 +1,205 @@
+[ec2-user@ip-172-31-10-122 ~]$ ls
+java
+[ec2-user@ip-172-31-10-122 ~]$ cd java
+[ec2-user@ip-172-31-10-122 java]$ ls
+maven-enterprise-application  maven-standalone-application  maven-web-application
+[ec2-user@ip-172-31-10-122 java]$ git clone https://github.com/BejadiRajeshReddy18/maven                 -enterprise-application.git
+fatal: destination path 'maven-enterprise-application' already exists and is not an empt                 y directory.
+[ec2-user@ip-172-31-10-122 java]$ maven -version
+-bash: maven: command not found
+[ec2-user@ip-172-31-10-122 java]$ mvn -version
+Apache Maven 3.6.3 (Red Hat 3.6.3-14)
+Maven home: /usr/share/maven
+Java version: 11.0.18, vendor: Red Hat, Inc., runtime: /usr/lib/jvm/java-11-openjdk-11.0                 .18.0.10-2.el9_1.x86_64
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.14.0-70.43.1.el9_0.x86_64", arch: "amd64", family: "unix"
+[ec2-user@ip-172-31-10-122 java]$ cd maven-enterprise-application/
+[ec2-user@ip-172-31-10-122 maven-enterprise-application]$ ls
+MavenEnterpriseApp-ear  MavenEnterpriseApp-web  pom.xml
+[ec2-user@ip-172-31-10-122 maven-enterprise-application]$ mvn clean package
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO]
+[INFO] Maven Enterprise Application                                       [pom]
+[INFO] MavenEnterpriseApplication                                         [war]
+[INFO] MavenEnterpriseApp-ear JavaEE6 Assembly                            [ear]
+[INFO]
+[INFO] ----------------< com.mt:maven-enterprise-application >-----------------
+[INFO] Building Maven Enterprise Application 1.0                          [1/3]
+[INFO] --------------------------------[ pom ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/                 maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/m                 aven-clean-plugin/2.5/maven-clean-plugin-2.5.pom (3.9 kB at 6.0 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/                 maven-plugins/22/maven-plugins-22.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/m                 aven-plugins/22/maven-plugins-22.pom (13 kB at 198 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-pa                 rent/21/maven-parent-21.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-par                 ent/21/maven-parent-21.pom (26 kB at 382 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/10/apac                 he-10.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/10/apach                 e-10.pom (15 kB at 239 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/                 maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/m                 aven-clean-plugin/2.5/maven-clean-plugin-2.5.jar (25 kB at 440 kB/s)
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ maven-enterprise-application -                 --
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-pl                 ugin-api/2.0.6/maven-plugin-api-2.0.6.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plu                 gin-api/2.0.6/maven-plugin-api-2.0.6.pom (1.5 kB at 29 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.                 0.6/maven-2.0.6.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0                 .6/maven-2.0.6.pom (9.0 kB at 171 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-pa                 rent/5/maven-parent-5.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-par                 ent/5/maven-parent-5.pom (15 kB at 287 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/3/apach                 e-3.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/3/apache                 -3.pom (3.4 kB at 76 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexu                 s-utils/3.0/plexus-utils-3.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus                 -utils/3.0/plexus-utils-3.0.pom (4.1 kB at 77 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-                 parent/16/spice-parent-16.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-p                 arent/16/spice-parent-16.pom (8.4 kB at 182 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-                 parent/5/forge-parent-5.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-p                 arent/5/forge-parent-5.pom (8.4 kB at 161 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-pl                 ugin-api/2.0.6/maven-plugin-api-2.0.6.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexu                 s-utils/3.0/plexus-utils-3.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plu                 gin-api/2.0.6/maven-plugin-api-2.0.6.jar (13 kB at 226 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus                 -utils/3.0/plexus-utils-3.0.jar (226 kB at 1.1 MB/s)
+[INFO]
+[INFO] -------------------< com.mt:MavenEnterpriseApp-web >--------------------
+[INFO] Building MavenEnterpriseApplication 1.0                            [2/3]
+[INFO] --------------------------------[ war ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/                 maven-resources-plugin/2.6/maven-resources-plugin-2.6.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/m                 aven-resources-plugin/2.6/maven-resources-plugin-2.6.pom (8.1 kB at 156 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/                 maven-plugins/23/maven-plugins-23.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/m                 aven-plugins/23/maven-plugins-23.pom (9.2 kB at 184 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-pa                 rent/22/maven-parent-22.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-par                 ent/22/maven-parent-22.pom (30 kB at 572 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/11/apac                 he-11.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/11/apach                 e-11.pom (15 kB at 203 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/                 maven-resources-plugin/2.6/maven-resources-plugin-2.6.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/m                 aven-resources-plugin/2.6/maven-resources-plugin-2.6.jar (30 kB at 509 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/                 maven-compiler-plugin/2.5.1/maven-compiler-plugin-2.5.1.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/m                 aven-compiler-plugin/2.5.1/maven-compiler-plugin-2.5.1.pom (7.9 kB at 150 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/                 maven-compiler-plugin/2.5.1/maven-compiler-plugin-2.5.1.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/m                 aven-compiler-plugin/2.5.1/maven-compiler-plugin-2.5.1.jar (33 kB at 591 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/                 maven-surefire-plugin/2.12.4/maven-surefire-plugin-2.12.4.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/m                 aven-surefire-plugin/2.12.4/maven-surefire-plugin-2.12.4.pom (10 kB at 198 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire                 /surefire/2.12.4/surefire-2.12.4.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/                 surefire/2.12.4/surefire-2.12.4.pom (14 kB at 281 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/                 maven-surefire-plugin/2.12.4/maven-surefire-plugin-2.12.4.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/m                 aven-surefire-plugin/2.12.4/maven-surefire-plugin-2.12.4.jar (30 kB at 534 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/                 maven-war-plugin/2.2/maven-war-plugin-2.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/m                 aven-war-plugin/2.2/maven-war-plugin-2.2.pom (6.5 kB at 129 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/                 maven-war-plugin/2.2/maven-war-plugin-2.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/m                 aven-war-plugin/2.2/maven-war-plugin-2.2.jar (79 kB at 894 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.                 12.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.1                 2.pom (24 kB at 464 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-cor                 e/1.3/hamcrest-core-1.3.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core                 /1.3/hamcrest-core-1.3.pom (766 B at 15 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-par                 ent/1.3/hamcrest-parent-1.3.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-pare                 nt/1.3/hamcrest-parent-1.3.pom (2.0 kB at 43 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/sprin                 g-test/3.2.3.RELEASE/spring-test-3.2.3.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring                 -test/3.2.3.RELEASE/spring-test-3.2.3.RELEASE.pom (6.1 kB at 102 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/sprin                 g-core/3.2.3.RELEASE/spring-core-3.2.3.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring                 -core/3.2.3.RELEASE/spring-core-3.2.3.RELEASE.pom (2.1 kB at 44 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/commons-logging/commons-l                 ogging/1.1.1/commons-logging-1.1.1.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-logging/commons-lo                 gging/1.1.1/commons-logging-1.1.1.pom (18 kB at 347 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/common                 s-parent/5/commons-parent-5.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons                 -parent/5/commons-parent-5.pom (16 kB at 365 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/4/apach                 e-4.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/4/apache                 -4.pom (4.5 kB at 80 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/                 1.9.5/mockito-core-1.9.5.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/1                 .9.5/mockito-core-1.9.5.pom (1.5 kB at 30 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-cor                 e/1.1/hamcrest-core-1.1.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core                 /1.1/hamcrest-core-1.1.pom (481 B at 11 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-par                 ent/1.1/hamcrest-parent-1.1.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-pare                 nt/1.1/hamcrest-parent-1.1.pom (5.9 kB at 125 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/1                 .0/objenesis-1.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/1.                 0/objenesis-1.0.pom (853 B at 16 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/sprin                 g-core/5.0.2.RELEASE/spring-core-5.0.2.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring                 -core/5.0.2.RELEASE/spring-core-5.0.2.RELEASE.pom (4.0 kB at 90 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/io/projectreactor/reactor                 -bom/Bismuth-SR4/reactor-bom-Bismuth-SR4.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-                 bom/Bismuth-SR4/reactor-bom-Bismuth-SR4.pom (3.6 kB at 84 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/io/netty/netty-bom/4.1.17                 .Final/netty-bom-4.1.17.Final.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/io/netty/netty-bom/4.1.17.                 Final/netty-bom-4.1.17.Final.pom (7.9 kB at 161 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-pare                 nt/7/oss-parent-7.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-paren                 t/7/oss-parent-7.pom (4.8 kB at 96 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/sprin                 g-jcl/5.0.2.RELEASE/spring-jcl-5.0.2.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring                 -jcl/5.0.2.RELEASE/spring-jcl-5.0.2.RELEASE.pom (1.9 kB at 38 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/sprin                 g-web/5.0.2.RELEASE/spring-web-5.0.2.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring                 -web/5.0.2.RELEASE/spring-web-5.0.2.RELEASE.pom (12 kB at 233 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/sprin                 g-beans/5.0.2.RELEASE/spring-beans-5.0.2.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring                 -beans/5.0.2.RELEASE/spring-beans-5.0.2.RELEASE.pom (2.7 kB at 58 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/sprin                 g-webmvc/5.0.2.RELEASE/spring-webmvc-5.0.2.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring                 -webmvc/5.0.2.RELEASE/spring-webmvc-5.0.2.RELEASE.pom (9.5 kB at 195 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/sprin                 g-aop/5.0.2.RELEASE/spring-aop-5.0.2.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring                 -aop/5.0.2.RELEASE/spring-aop-5.0.2.RELEASE.pom (2.5 kB at 39 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/sprin                 g-context/5.0.2.RELEASE/spring-context-5.0.2.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring                 -context/5.0.2.RELEASE/spring-context-5.0.2.RELEASE.pom (5.7 kB at 112 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/sprin                 g-expression/5.0.2.RELEASE/spring-expression-5.0.2.RELEASE.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring                 -expression/5.0.2.RELEASE/spring-expression-5.0.2.RELEASE.pom (1.7 kB at 35 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/javax/servlet/javax.servl                 et-api/3.1.0/javax.servlet-api-3.1.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/servlet/javax.servle                 t-api/3.1.0/javax.servlet-api-3.1.0.pom (14 kB at 294 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/3/j                 vnet-parent-3.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/3/jv                 net-parent-3.pom (4.8 kB at 100 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.                 12.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-cor                 e/1.3/hamcrest-core-1.3.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/sprin                 g-test/3.2.3.RELEASE/spring-test-3.2.3.RELEASE.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/                 1.9.5/mockito-core-1.9.5.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/1                 .0/objenesis-1.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core                 /1.3/hamcrest-core-1.3.jar (45 kB at 662 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/sprin                 g-core/5.0.2.RELEASE/spring-core-5.0.2.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/1.                 0/objenesis-1.0.jar (29 kB at 236 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/sprin                 g-jcl/5.0.2.RELEASE/spring-jcl-5.0.2.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring                 -jcl/5.0.2.RELEASE/spring-jcl-5.0.2.RELEASE.jar (16 kB at 97 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/sprin                 g-web/5.0.2.RELEASE/spring-web-5.0.2.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.1                 2.jar (315 kB at 1.6 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/sprin                 g-beans/5.0.2.RELEASE/spring-beans-5.0.2.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring                 -test/3.2.3.RELEASE/spring-test-3.2.3.RELEASE.jar (456 kB at 1.3 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/sprin                 g-webmvc/5.0.2.RELEASE/spring-webmvc-5.0.2.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring                 -beans/5.0.2.RELEASE/spring-beans-5.0.2.RELEASE.jar (655 kB at 1.2 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/sprin                 g-aop/5.0.2.RELEASE/spring-aop-5.0.2.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring                 -core/5.0.2.RELEASE/spring-core-5.0.2.RELEASE.jar (1.2 MB at 2.2 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/sprin                 g-expression/5.0.2.RELEASE/spring-expression-5.0.2.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/1                 .9.5/mockito-core-1.9.5.jar (1.5 MB at 2.3 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/sprin                 g-context/5.0.2.RELEASE/spring-context-5.0.2.RELEASE.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring                 -web/5.0.2.RELEASE/spring-web-5.0.2.RELEASE.jar (1.2 MB at 1.8 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/javax/servlet/javax.servl                 et-api/3.1.0/javax.servlet-api-3.1.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring                 -webmvc/5.0.2.RELEASE/spring-webmvc-5.0.2.RELEASE.jar (783 kB at 1.1 MB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring                 -expression/5.0.2.RELEASE/spring-expression-5.0.2.RELEASE.jar (263 kB at 382 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring                 -aop/5.0.2.RELEASE/spring-aop-5.0.2.RELEASE.jar (361 kB at 514 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/servlet/javax.servle                 t-api/3.1.0/javax.servlet-api-3.1.0.jar (96 kB at 129 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring                 -context/5.0.2.RELEASE/spring-context-5.0.2.RELEASE.jar (1.1 MB at 1.3 MB/s)
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ MavenEnterpriseApp-web ---
+[INFO] Deleting /home/ec2-user/java/maven-enterprise-application/MavenEnterpriseApp-web/                 target
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Maven Enterprise Application 1.0:
+[INFO]
+[INFO] Maven Enterprise Application ....................... SUCCESS [  2.422 s]
+[INFO] MavenEnterpriseApplication ......................... FAILURE [  4.281 s]
+[INFO] MavenEnterpriseApp-ear JavaEE6 Assembly ............ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.922 s
+[INFO] Finished at: 2023-03-03T12:47:39Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-clean-plugin:2.5:clean (de                 fault-clean) on project MavenEnterpriseApp-web: Failed to clean project: Failed to delet                 e /home/ec2-user/java/maven-enterprise-application/MavenEnterpriseApp-web/target/MavenEn                 terpriseApplication.war -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the fo                 llowing articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR]
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :MavenEnterpriseApp-web
+[ec2-user@ip-172-31-10-122 maven-enterprise-application]$ Connection to ec2-13-127-162-4                 5.ap-south-1.compute.amazonaws.com closed by remote host.
+Connection to ec2-13-127-162-45.ap-south-1.compute.amazonaws.com closed.
+                                                                                       ?
+
+ ? /home/mobaxterm/Desktop/ec2pemfiles ?
+ ? 03/03/2023 ? ? 18:19.41 ? ssh -i "rajesh.pem" ec2-user@ec2-15-207-20-87.ap-south-1.compute.amazonaws.com
+ssh: connect to host ec2-15-207-20-87.ap-south-1.compute.amazonaws.com port 22: Connection refused
+                                                                                                        ?
+
+ ? 03/03/2023 ? ? 18:21.40 ? ? /home/mobaxterm/Desktop/ec2pemfiles ? ssh -i "rajesh.pem" ec2-user@ec2-15-207-20-87.ap-south-1.compute.amazonaws.com
+ssh: connect to host ec2-15-207-20-87.ap-south-1.compute.amazonaws.com port 22: Connection refused
+                                                                                                        ?
+
+ ? 03/03/2023 ? ? 18:21.54 ? ? /home/mobaxterm/Desktop/ec2pemfiles ? ssh -i "rajesh.pem" ec2-user@ec2-15-207-20-87.ap-south-1.compute.amazonaws.com
